@@ -463,7 +463,6 @@ var _ = {
 	},
 
 	tokenize: function(text, grammar) {
-		console.log(text);
 		var strarr = [text];
 
 		var rest = grammar.rest;

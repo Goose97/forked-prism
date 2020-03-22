@@ -521,7 +521,7 @@ function Token(type, content, alias, matchedStr, greedy) {
 
 Token.stringify = function stringify(o, language) {
 	if (typeof o == 'string') {
-		return o;
+		return `<span class="non-token">${o}</span>`;
 	}
 	if (Array.isArray(o)) {
 		var s = '';
